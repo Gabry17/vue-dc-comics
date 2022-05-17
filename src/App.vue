@@ -29,7 +29,7 @@ export default {
 @import "./css/common.scss";
 .main{
   background-color: aqua;
-  height: 250px;
+  height: 350px;
 }
 
 </style>
