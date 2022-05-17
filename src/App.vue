@@ -4,7 +4,7 @@
     <AppHeader />
 
     <!-- main -->
-    <main class="main"></main>
+    <AppMain />
 
     <!-- footer -->
     <AppFooter />
@@ -13,6 +13,7 @@
 
 <script>
 import AppHeader from './components/AppHeader.vue';
+import AppMain from './components/AppMain.vue';
 import AppFooter from './components/AppFooter.vue';
 
 
@@ -20,6 +21,7 @@ export default {
   name: 'App',
   components: {
     AppHeader,
+    AppMain,
     AppFooter
   }
 }
@@ -27,9 +29,5 @@ export default {
 
 <style lang="scss">
 @import "./css/common.scss";
-.main{
-  background-color: aqua;
-  height: 350px;
-}
 
 </style>

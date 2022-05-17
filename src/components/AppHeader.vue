@@ -66,7 +66,9 @@ $color-primary-color: #0080ff;
 .header{
     height: 100px;
     display: flex;
-    justify-content: space-around;
+    width: 70%;
+    margin: 0 auto;
+    justify-content: space-between;
     align-items: center;
     img{
         height: 70%;
@@ -84,7 +86,7 @@ $color-primary-color: #0080ff;
     }
     .active{
         color: $color-primary-color;
-        padding: 2em 0;
+        padding: 2.4em 0;
         border-bottom: 2px solid $color-primary-color;
     }
 }

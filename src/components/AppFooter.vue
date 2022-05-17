@@ -94,15 +94,18 @@ $color-dark-color: #212121;
 .link{
     display: flex;
     ul{
-        margin:1em 2em;
+        margin-right: 1em;
+        margin-top: 1em;
     }
 }
 
 .top{
-    width: 60%;
+    width: 70%;
+    height: 100%;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 
@@ -110,7 +113,7 @@ $color-dark-color: #212121;
     height: 20%;
     background-color: $color-dark-color;
     .text{
-        width: 60%;
+        width: 70%;
         height: 100%;
         margin: 0 auto;
         display: flex;
@@ -119,14 +122,14 @@ $color-dark-color: #212121;
         button{
             color: white;
             background-color: inherit;
-            border: 1px solid blue;
+            border: 1px solid #0080ff;
             padding: 1em;
         }
     }
 
     .icon{
         span{
-            color: blue;
+            color: #0080ff;
             text-transform: uppercase;
             vertical-align: middle;
         }
