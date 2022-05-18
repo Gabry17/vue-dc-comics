@@ -168,7 +168,7 @@ export default {
     background-color: $color-primary-color;
     ul{
         display: flex;
-        padding: 1em 0;
+        padding: 3em 0;
         img{
             height: 50px;
             vertical-align: middle;
