@@ -20,7 +20,7 @@ export default {
         width: calc(100% / 6 - 10px);
         padding-bottom: 2em;
         img{
-            height: 200px;
+            height: auto;
             width: 100%;
         }
     }
