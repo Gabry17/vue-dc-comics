@@ -62,7 +62,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-$color-primary-color: #0080ff;
+@import '../css/variables';
+
 .header{
     height: 100px;
     display: flex;

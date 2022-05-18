@@ -69,7 +69,9 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import '../css/variables';
 $color-dark-color: #212121;
+
 .footer {
     height: 500px;
 }
@@ -84,7 +86,7 @@ $color-dark-color: #212121;
             color: #8f8c8c;
         }
         h3 {
-            color: white;
+            color: $color-text-color;
             text-transform: uppercase;
             margin-bottom: 1em;
         }
@@ -120,16 +122,16 @@ $color-dark-color: #212121;
         justify-content: space-between;
         align-items: center;
         button{
-            color: white;
+            color: $color-text-color;
             background-color: inherit;
-            border: 1px solid #0080ff;
+            border: 1px solid $color-primary-color;
             padding: 1em;
         }
     }
 
     .icon{
         span{
-            color: #0080ff;
+            color: $color-primary-color;
             text-transform: uppercase;
             vertical-align: middle;
         }

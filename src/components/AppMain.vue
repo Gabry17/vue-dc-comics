@@ -2,14 +2,14 @@
 <div class="main">
     <div class="main-top">
         <div class="cont-top">
-            <button>current series</button>
+            <button class="btn-1">current series</button>
             <div class="cont-props">
                 <AppProps 
                 v-for="(element,index) in image" 
                 :key="index"
                 :productObj="element" />
             </div>
-            <button>Load More</button>
+            <button class="btn-2">Load More</button>
         </div>
     </div>
     <div class="main-bottom">
@@ -116,10 +116,19 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import '../css/variables';
+@mixin styleBtn{
+    border: none;
+    background-color: $color-primary-color;
+    padding: 1em 2em;
+    color: $color-text-color;
+    text-transform: uppercase;
+}
+
 .main-top{
     background-color: black;
     span{
-        color: white;
+        color: $color-text-color;
         font-size: 1.5em;
     }
 }
@@ -129,18 +138,21 @@ export default {
     margin: 0 auto;
     text-align: center;
     padding-bottom: 1em;
+    position: relative;
+    .btn-1{
+        position: absolute;
+        top: -20px;
+        left: 0;
+        @include styleBtn()
+    }
     .cont-props{
-        color: white;
+        color: $color-text-color;
         display: flex;
         flex-wrap: wrap;
         padding-top: 3em;
     }
-    button{
-        border: none;
-        background-color: blue;
-        padding: 1em 2em;
-        color: white;
-        text-transform: uppercase;
+    .btn-2{
+        @include styleBtn()
     }
 }
 
@@ -153,7 +165,7 @@ export default {
 
 
 .main-bottom{
-    background-color: #0080ff;
+    background-color: $color-primary-color;
     ul{
         display: flex;
         padding: 1em 0;
@@ -164,7 +176,7 @@ export default {
         }
         a{
             text-transform: uppercase;
-            color: white;
+            color: $color-text-color;
             font-size: 12px;
         }
     }
