@@ -71,11 +71,12 @@ $color-primary-color: #0080ff;
     justify-content: space-between;
     align-items: center;
     img{
-        height: 70%;
+        height: 50px;
         vertical-align: middle;
     }
     ul{
         display: flex;
+        line-height: 100px;
         li{
             margin: .5rem;
         }   

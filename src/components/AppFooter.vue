@@ -71,7 +71,7 @@ export default {
 <style lang="scss" scoped>
 $color-dark-color: #212121;
 .footer {
-    height: calc(100vh - 450px);
+    height: 500px;
 }
 .foot-top {
     background-image: url("../assets/img/footer-bg.jpg");
